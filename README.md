@@ -147,6 +147,32 @@ When you make changes to any config file:
    git push
    ```
 
+## Security & Privacy
+
+This repository does **not** contain:
+- API keys or tokens
+- Passwords or credentials
+- SSH keys or certificates
+
+However, it does contain:
+- **Usernames**: GitHub and UiO usernames in `gh/hosts.yml`
+- **Personal aliases**: Custom command shortcuts and directory paths in `.zshrc`
+- **SSH connection strings**: University server connection info
+
+### What's Excluded (via .gitignore)
+
+The following directories are excluded from version control:
+- `github-copilot/` - May contain authentication data
+- `raycast/extensions/` - Large compiled extension files
+- `*.log` files - Log files that may contain sensitive info
+- `*.bak` files - Backup files
+
+### Recommendations
+
+1. Review `gh/hosts.yml` and `.zshrc` before pushing to a public repository
+2. Consider removing or anonymizing personal paths and server addresses
+3. Authentication tokens are stored separately by tools like `gh` (GitHub CLI) and won't be committed
+
 ## Notes
 
 - The Alacritty directory contains multiple backup files (`.bak`) from previous configurations

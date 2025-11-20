@@ -1,0 +1,27 @@
+# GitHub Copilot (may contain auth data)
+github-copilot/
+
+# Raycast extensions (large compiled files)
+raycast/extensions/
+
+# Fish shell history
+fish/fish_history
+
+# Any local/private configs
+*.local
+*.private
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Log files
+*.log
+
+# Cache directories
+cache/
+.cache/
+
+# macOS
+.DS_Store
